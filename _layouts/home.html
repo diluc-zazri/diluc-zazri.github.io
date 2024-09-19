@@ -1,0 +1,28 @@
+<!-- _layouts/home.html -->
+---
+layout: default
+---
+
+<h1>{{ site.title }}</h1>
+<p>{{ site.description }}</p>
+
+<ul class="post-list">
+  {% for post in paginator.posts %}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
+      <h2>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Previous</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+  {% endif %}
+</div>
