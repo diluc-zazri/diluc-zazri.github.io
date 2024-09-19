@@ -9,7 +9,6 @@ twitter_username: twitter_handle
 github_username: diluc-zazri
 
 # Build settings
-markdown: kramdown
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed  # For RSS feed generation
