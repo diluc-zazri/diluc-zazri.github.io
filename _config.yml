@@ -1,0 +1,25 @@
+# _config.yml
+title: Diluc Zazri
+description: "Blogging about cybersecurity, reverse engineering, and programming."
+baseurl: ""
+url: "https://diluc-zazri.github.io"  # your GitHub Pages URL
+author: Diluc Zazri
+email: email@example.com
+twitter_username: twitter_handle
+github_username: diluc-zazri
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed  # For RSS feed generation
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
